@@ -1,0 +1,54 @@
+@font-face {
+    font-family: Retrosigned;
+    src: url(Fonts/Retro\ Signed.otf);
+}
+
+@font-face {
+    font-family: Showtime;
+    src: url(Fonts/Showtime.ttf);
+}
+
+body{
+    background-image: linear-gradient(to right, #FFF600,#E51C24);
+}
+
+h1{
+    font-family: Showtime;
+    font-size: 40px;
+}
+
+.GetHelpButton{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.SlotMachine{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.MoneyInputs{
+    border: 1px solid black;
+    border-width: 5px;
+    margin-right: 70%;
+    text-align: center;
+}
+
+.Spinner{
+    background-color: white;
+    border: 1px solid gray;
+    display: inline;
+    font-size: 40px;
+}
+
+.LossMessage{
+    min-height: 0px;
+    display: none;
+    color: #E51C24;
+    font-weight: bolder;
+    font-size: 30px;
+}

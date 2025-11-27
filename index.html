@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner NOT GAMBLER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="GetHelpButton">
+        <a href="help.html"><button style="font-size: 35px;" type="button">Get Help</button></a>
+    </div>
+    <center>
+        <h1>(Drew's_<span style="text-decoration: line-through;">not_working</span>_Slot_Machine) </h1>
+    </center>
+    <div class="MoneyInputs" style="font-family: RetroSigned; font-size: 40px;">
+        <div style="padding: 2px; font-family: Showtime;">(Money_inputs!)</div>
+        <div style="padding: 5px;"></div>
+        <div style="border: 2px solid; padding: 5px;" id="Money"></div>
+        <div style="padding-top: 10px;"></div>
+        <div style="border: 2px solid; padding-top: 5px;">
+            <span style="padding-top: 25px;">NOT Betting Money<br></span>
+            <input type="Number" id="MoneyInput">
+        </div>
+        <button onclick="CheckMoney ()">
+            <span style="padding-top: 10px; font-size: 7px; text-decoration: line-through;">GAMBLE</span>
+            <span style="font-family: RetroSigned; font-size: 30px;">SPIN</span>
+        </button>
+        <div id="ERROR" style="color: red; font-size: 35px;"></div>
+    </div>
+    <center>
+        <div class="Spinner" style="display: inline;">
+            <span style="margin: 0.5%;">NOT GAMBLING MACHINE</span><br>
+            <span id="Slot1" style="margin: 13.8%;"></span><br>
+            <span id="Slot2" style="margin: 13.8%;"></span><br>
+            <span id="Slot3" style="margin: 13.8%;"></span>
+        </div>
+
+        <div id="LossMessage" class="LossMessage">Sorry! The machine is broken! Guess you lost your money bozo!</div>
+    </center>
+    <video id="RandomVideo" autoplay muted loop style="position: absolute; right: 0; top: 0; width: 300px;">
+    </video>
+    <audio src="Spinning.mp3" id="SpinningID"></audio>
+    <audio src="Music.mp3" id="MainMusic"></audio>
+</body>
+
+<script src="script.js"></script>
+
+</html>

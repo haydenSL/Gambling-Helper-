@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<center>
+
+    <body>
+        <h1>(Help_page)</h1>
+        <div style="font-size: 30px;">
+            <p>If you are struggling with a gambling addiction<br>
+                please consider contacting one of these helplines :D<br>
+                <br>
+                <br>
+                Gambling carries substantial risks that extend far beyond<br>
+                simple financial loss, making it a potentially destructive<br>
+                activity. At its core, gambling is designed so the casino <br>
+                will always win in the long run.
+            </p>
+        </div>
+        <h2>Phone : 0808 8020 133</h2>
+        <button style="font-size: 35px;" onclick="GambleRandom()" type="button">Get Help</button>
+</center>
+<a href="index.html"><button type="button">Go Back</button></a>
+</body>
+<script>
+    const helpsites = ["www.nhs.uk/live-well/addiction-support/drug-addiction-getting-help/",
+        "www.gambleaware.org/",
+        "www.gamblingcommission.gov.uk/public-and-players/guide/page/organisations-that-can-help",
+        "www.gamcare.org.uk/",
+        "fyi.bradford.gov.uk/information-advice/mental-health-wellbeing/gambling/",
+        "gordonmoody.org.uk/",
+        "gamblersanonymous.org.uk/",
+        "gamblingcare.ie/",
+        "www.cnwl.nhs.uk/services/addictions/national-gambling-clinic"]
+    function GambleRandom() {
+        var randIdx = Math.random() * helpsites.length;
+        randIdx = parseInt(randIdx, 10);
+        var link = 'https://' + helpsites[randIdx];
+        window.open(link); x
+    }
+</script>
+
+
+</html>
