@@ -1,0 +1,5 @@
+https://emojidb.org/slot-machine-emojis
+for emojis for slot machine icons :)
+
+https://stackoverflow.com/questions/3583724/how-do-i-add-a-delay-in-a-javascript-loop
+for making the slot symbols swap a certain number of times before stopping
