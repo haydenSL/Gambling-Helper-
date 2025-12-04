@@ -3,7 +3,7 @@ let money = 100
 document.getElementById('Money').textContent = `Your Money £${money}`
 
 function CheckMoney() {
-    let gmoney = document.getElementById('MoneyInput').value
+    let gmoney =Math.round(document.getElementById('MoneyInput').value)
     document.getElementById('LossMessage').style.display = 'none'
     if (money < gmoney) {
         document.getElementById('ERROR').textContent = "You don't have that much money to spend!"
