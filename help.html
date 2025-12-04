@@ -23,7 +23,7 @@
             </p>
         </div>
         <h2>Phone : 0808 8020 133</h2>
-        <button style="font-size: 35px;" onclick="GambleRandom()" type="button">Get Help</button>
+        <button style="font-size: 35px;" onclick="RandomWesbite()" type="button">Get Help</button>
 </center>
 <a href="index.html"><button type="button">Go Back</button></a>
 </body>
@@ -37,7 +37,7 @@
         "gamblersanonymous.org.uk/",
         "gamblingcare.ie/",
         "www.cnwl.nhs.uk/services/addictions/national-gambling-clinic"]
-    function GambleRandom() {
+    function RandomWesbite() {
         var randIdx = Math.random() * helpsites.length;
         randIdx = parseInt(randIdx, 10);
         var link = 'https://' + helpsites[randIdx];

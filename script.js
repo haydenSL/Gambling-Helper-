@@ -4,6 +4,7 @@ document.getElementById('Money').textContent = `Your Money £${money}`
 
 function CheckMoney() {
     let gmoney = document.getElementById('MoneyInput').value
+    document.getElementById('LossMessage').style.display = 'none'
     if (money < gmoney) {
         document.getElementById('ERROR').textContent = "You don't have that much money to spend!"
     }
@@ -17,7 +18,7 @@ function CheckMoney() {
         document.getElementById('SpinningID').play()
         var i = 0
         NotGambling(i)
-        document.getElementById('LossMessage').style.display = 'block'
+        
     }
 }
 
@@ -46,6 +47,9 @@ function NotGambling(i) {
 
         if (i < 350) {
             NotGambling(i);
+        }
+        else{
+            document.getElementById('LossMessage').style.display = 'block'
         }
     }, 10)
 }
