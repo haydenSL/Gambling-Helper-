@@ -9,9 +9,6 @@
 </head>
 
 <body>
-    <div class="GetHelpButton">
-        <a href="help.html"><button style="font-size: 35px;" type="button">Get Help</button></a>
-    </div>
     <center>
         <h1>(Drew's_<span style="text-decoration: line-through;">not_working</span>_Slot_Machine) </h1>
     </center>
@@ -31,16 +28,17 @@
         <div id="ERROR" style="color: red; font-size: 35px;"></div>
     </div>
     <center>
-        <div class="Spinner" style="display: inline;">
-            <span style="margin: 0.5%;">NOT GAMBLING MACHINE</span><br>
-            <span id="Slot1" style="margin: 13.8%;"></span><br>
-            <span id="Slot2" style="margin: 13.8%;"></span><br>
-            <span id="Slot3" style="margin: 13.8%;"></span>
+        <div class="Spinner" style="display: inline; border: 1px solid;">
+            <span id="Slot1"><img src="empty.png"></span>
+            <span id="Slot2"><img src="empty.png"></span></span>
+            <span id="Slot3"><img src="empty.png"></span></span>
         </div>
 
         <div id="LossMessage" class="LossMessage">Sorry our machine broke! Please refer to the "Get Help" Button!</div>
+        <div class="GetHelpButton">
+            <a href="help.html"><button style="font-size: 35px;" type="button">Get Help</button></a>
+        </div>
     </center>
-    <video id="RandomVideo" autoplay muted loop style="position: absolute; right: 0; top: 0; width: 300px;">
     </video>
     <audio src="Spinning.mp3" id="SpinningID"></audio>
 </body>
