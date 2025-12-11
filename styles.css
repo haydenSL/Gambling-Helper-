@@ -9,13 +9,24 @@
 }
 
 body{
-    background-color: rgb(196, 196, 196)
+    background-color:#496d96
 }
 
 h1{
     font-family: Showtime;
     font-size: 40px;
 }
+
+button{
+    background-color: #d0e3f9;
+}
+
+button:hover{
+    background-color: #7598c1;
+    cursor: pointer;
+}
+
+
 
 .GetHelpButton{
     position: fixed;
